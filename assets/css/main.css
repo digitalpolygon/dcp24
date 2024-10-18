@@ -146,7 +146,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 32px;
+  /* max-height: 50px; */
   margin-right: 8px;
 }
 
@@ -636,7 +636,7 @@ section,
 
 .hero .carousel {
   width: 100%;
-  min-height: 75vh;
+  min-height: 85vh;
   padding: 0;
   margin: 0;
   background-color: var(--background-color);
@@ -791,8 +791,8 @@ section,
   background-color: var(--surface-color);
   color: var(--accent-color);
   margin: 0 auto;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   border-radius: 50px;
   display: flex;
   align-items: center;
@@ -801,6 +801,11 @@ section,
   font-size: 32px;
   transition: ease-in-out 0.3s;
   box-shadow: 0px 0 25px rgba(0, 0, 0, 0.1);
+}
+
+.img-icon {
+  width: 60px;
+  height: 60px;
 }
 
 .features .feature-item h3 {
