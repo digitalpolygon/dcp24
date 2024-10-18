@@ -1790,3 +1790,7 @@ section,
 .bg-cta-img {
   background: url("/assets/img/dcp/bg.jpg");
 }
+
+.cta-section .member img {
+  max-width: 500px;
+}
