@@ -662,7 +662,7 @@ section,
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: scale-down;
   z-index: 1;
 }
 
@@ -1810,17 +1810,60 @@ section,
 }
 
 .row-member img {
-  background: var(--accent-color);
+  /* background: var(--accent-color); */
+}
+
+.cta-section .member img {
+  max-width: 300px;
 }
 
 @media (min-width: 1200px) {
-  .cta-section .member img {
-    max-width: 500px;
-  }
-
   .row-member img {
-    width: 380px;
-    height: 300px;
+    width: 300px;
+    height: auto;
     aspect-ratio: 1;
+  }
+}
+
+.goto-next {
+  border: 0;
+  bottom: 0;
+  display: block;
+  height: 5em;
+  left: 50%;
+  margin: 0 0 0 -5em;
+  overflow: hidden;
+  position: absolute;
+  text-indent: 10em;
+  white-space: nowrap;
+  width: 10em;
+  z-index: 1;
+}
+
+.goto-next:before {
+  background-image: url("/assets/img/dcp/arrow.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: '';
+  display: block;
+  height: 1.5em;
+  left: 50%;
+  margin: -0.75em 0 0 -1em;
+  position: absolute;
+  top: 50%;
+  width: 2em;
+  z-index: 100;
+  
+  /* Adding animation */
+  animation: jump 1.5s infinite;
+}
+
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
   }
 }
