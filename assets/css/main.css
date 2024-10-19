@@ -1825,6 +1825,14 @@ section,
   }
 }
 
+@media (max-width: 600px) {
+  .row-member img {
+    width: 300px;
+    height: auto;
+    aspect-ratio: 1;
+  }
+}
+
 .goto-next {
   border: 0;
   bottom: 0;
